@@ -56,6 +56,9 @@ class PostListView(APIView):
             200: AllPostSerializer(many=True),
             401: 'Unauthorized',
         },
+        manual_parameters=[
+            openapi.Parameter('page', openapi.IN_QUERY, description="Page number for pagination", type=openapi.TYPE_INTEGER, required=False),       
+        ],
         operation_description="List all posts. Authentication not required.",
         operation_summary="List Posts"
     )
