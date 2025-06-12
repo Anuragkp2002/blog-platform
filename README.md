@@ -22,7 +22,7 @@ Users can create blog posts, comment on others' posts, and retrieve post details
 - Django 
 - Django REST Framework
 - Simple JWT
-- SQLite (for development)
+- SQLite
 
 ---
 
@@ -67,14 +67,14 @@ source venv/bin/activate  # On Unix/macOS
 pip install -r requirements.txt
 
 ```
-*4 Run migrations*
+*4. Run migrations*
 
 ```
 Python manage.py makemigrations appname
 Python manage.py migrate
 
 ```
-*5 Create a Super User /Reguler User*
+*5. Create a Super User /Reguler User*
 
 ```
 from django.contrib.auth.models import User
